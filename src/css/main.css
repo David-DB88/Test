@@ -1,0 +1,42 @@
+html {
+    font-size: 62.5%;
+  }
+body {
+    box-sizing: border-box;
+  }
+
+.container {
+    max-width: 124rem;
+    margin: 0 auto;
+    font-size: 1.6rem;
+  }
+  .layout {
+    display: grid;
+    grid-template-columns: 1fr  1fr;
+    grid-template-rows: 40vh 60vh;
+    grid-gap: 1rem;
+    & > * {
+        border: .1rem solid black
+    }
+  }
+  .block {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    padding: 2rem;
+  }
+  .items-wrapper {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(6rem, 1fr));
+    grid-gap: 1.5rem;
+    align-items: center;
+    justify-content: center;
+  }
+  .block__item {
+    width: 6rem;
+    height: 4rem;
+    padding: .5rem;
+    border: .2rem solid greenyellow
+  }
